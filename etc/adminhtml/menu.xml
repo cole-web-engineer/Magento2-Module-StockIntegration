@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Compass_StockIntegration::compass_stockintegration" title="Stock Integration" module="Compass_StockIntegration" sortOrder="100" parent="Magento_Backend::system" resource="Compass_StockIntegration::compass_stockintegration"/>
+        <add id="Compass_StockIntegration::products" title="Product History" module="Compass_StockIntegration" sortOrder="10" parent="Compass_StockIntegration::compass_stockintegration" action="stockintegration/product/index" resource="Compass_StockIntegration::products"/>        
+        <add id="Compass_StockIntegration::config" title="Configuration" module="Compass_StockIntegration" sortOrder="100" parent="Compass_StockIntegration::compass_stockintegration" action="adminhtml/system_config/edit/section/compass_stockintegration" resource="Compass_StockIntegration::config"/>         
+    </menu>
+</config>

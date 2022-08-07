@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="compass" translate="label" sortOrder="300">
+            <label>Compass</label>
+        </tab>        
+        <section id="compass_stockintegration" translate="label" type="text" sortOrder="191305" showInDefault="1" showInWebsite="0" showInStore="1">
+            <class>separator-top</class>
+            <label>Stock Integration Settings</label>
+            <tab>compass</tab>
+            <resource>Compass_StockIntegration::config</resource>
+            <group id="general" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General Settings</label>
+                <field id="enable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>                 
+            </group>
+            <group id="import" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Import Settings</label>
+                <field id="filepath" translate="label comment" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Import File Path</label>
+                    <comment><![CDATA[The file path where the imported files will be stored on the server must be defined.]]></comment>
+                    <validate>required-entry</validate>
+                </field>   
+                <field id="delimiter" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Delimiter</label>
+                    <validate>required-entry</validate>
+                </field>   
+                <field id="seperator" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Seperator</label>
+                    <validate>required-entry</validate>
+                </field>                
+            </group>          
+            <group id="cron" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Cron Settings</label>
+                <field id="enable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>                 
+            </group>            
+        </section>
+    </system>
+</config>

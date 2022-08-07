@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <compass_stockintegration>
+            <general>
+                <enable>0</enable>
+            </general>
+            <import>
+                <filepath>/import/stock_integration/</filepath>
+                <delimiter>,</delimiter>
+                <seperator>|</seperator>
+            </import>
+            <cron>
+                <enable>0</enable>
+            </cron>
+        </compass_stockintegration>
+    </default>
+</config>
