@@ -1,0 +1,15 @@
+{
+    "compass_stockintegration_products": {
+        "column": {
+            "id": true,
+            "sku": true,
+            "before_quantity": true,
+            "after_quantity": true,
+            "message": true,
+            "created_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

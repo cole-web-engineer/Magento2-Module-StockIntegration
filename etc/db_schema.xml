@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="compass_stockintegration_products" resource="default" engine="innodb" comment="Compass Stock Integration Products">
+        <column xsi:type="int" name="id" padding="11" unsigned="true" nullable="false" identity="true" comment="Id"/>
+        <column xsi:type="varchar" name="sku" length="64" nullable="false" comment="Sku"/>
+        <column xsi:type="int" name="before_quantity" padding="16" nullable="false" default="0" comment="Before Quantity"/>
+        <column xsi:type="int" name="after_quantity" padding="16" nullable="false" default="0" comment="After Quantity"/>
+        <column xsi:type="longtext" name="message" padding="255" nullable="true" comment="Message"/>
+        <column xsi:type="datetime" name="created_at" comment="Created At"/>
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="id"/>
+        </constraint>    
+    </table>
+</schema>

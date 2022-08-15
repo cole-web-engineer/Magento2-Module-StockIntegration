@@ -32,8 +32,15 @@
                     <validate>required-entry</validate>
                 </field>                
             </group>          
-            <group id="cron" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+            <group id="cron" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>Cron Settings</label>
+                <field id="enable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>                 
+            </group> 
+            <group id="history" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>History Settings</label>
                 <field id="enable" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="1">
                     <label>Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
